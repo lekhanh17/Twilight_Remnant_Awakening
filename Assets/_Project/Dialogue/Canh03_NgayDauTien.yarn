@@ -1,0 +1,20 @@
+﻿title: Canh03_NgayDauTien
+---
+Người dẫn chuyện: Sáng sớm, khu phong tỏa quanh một Vết Sẹo hạng F vừa đóng. Xác Vọng Thú to cỡ một chiếc xe tải, nằm co quắp trong hẻm.
+Người dẫn chuyện: Yuki ném cho Ren một bộ đồ bảo hộ đã cũ, vá ở vài chỗ.
+Yuki: Đồ của người trước. Cậu ấy nghỉ.
+Ren: Nghỉ vì sao?
+Yuki: Vì lý do mà cậu sẽ tự hỏi lại câu này sau ba tháng nữa.
+Người dẫn chuyện: Yuki hướng dẫn Ren cưa lớp màng ngoài — công việc chậm, nặng nhọc. Mồ hôi, mùi, tiếng cưa rít. Thanh Thể Lực hiện lần đầu, tụt dần.
+Người dẫn chuyện: Khi Ren chạm gần tới lõi nhỏ bên trong, Yuki chặn tay anh lại — phản xạ nhanh, gần như bản năng.
+Yuki: Chậm. Làm vỡ Lõi, cậu è cổ ra đền ba tháng lương. Tôi từng làm vỡ một cái, năm đầu tiên.
+Ren: Chị cũng từng là lính mới à.
+Yuki: Ai cũng từng là lính mới ở đâu đó.
+Người dẫn chuyện: Kết ca làm, Ren ngồi bệt xuống bậc thềm công ty, nhìn thành quả: vài mảnh vảy, một mẩu Lõi bé tí trong túi zip. Yuki ngồi cạnh, đưa anh một chai nước.
+Yuki: Cảm giác thế nào?
+Ren: Mệt hơn tôi tưởng. Và... ít vinh quang hơn tôi tưởng.
+Yuki: Tốt. Người còn mơ vinh quang ở đây thường nghỉ trong tuần đầu.
+Người dẫn chuyện: Yuki đứng dậy, nhìn về phía Vết Sẹo đã đóng, giọng đổi khác — nhẹ hơn, xa xăm hơn.
+Yuki: Cổng này đóng nhanh bất thường đấy. Tuần trước còn có tin nó không đóng nổi tận ba ngày. Không ai giải thích tại sao.
+<<set_flag "Canh03_HoanThanh">>
+===

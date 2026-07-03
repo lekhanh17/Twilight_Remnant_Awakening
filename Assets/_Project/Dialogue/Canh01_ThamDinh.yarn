@@ -1,0 +1,17 @@
+﻿title: Canh01_ThamDinh
+---
+Người dẫn chuyện: Sảnh giám định Hội Trấn Thú, buổi sáng. Ánh sáng trắng lạnh từ trần kính. Tiếng máy Lăng Kính Giám Định kêu o o đều đặn.
+Người dẫn chuyện: Ren đứng cuối hàng, tay áo khoác đã sờn ở cổ tay. Anh đã mặc bộ đồ này cho cả ba lần thẩm định.
+Người dẫn chuyện: Người phía trước bước xuống bục, tay áp lên Lăng Kính. Ánh sáng xanh.
+Loa: Rank C — Ranger.
+Người dẫn chuyện: Vài tiếng vỗ tay rời rạc. Đến lượt Ren. Anh đặt tay lên mặt kính lạnh. Không nói gì. Không cầu nguyện.
+Loa Hệ Thống: Kato Ren. Tỉ lệ thức tỉnh: 0.00%. Không đủ điều kiện cấp phép Warden.
+Người dẫn chuyện: Không có tiếng cười lớn. Tệ hơn — im lặng. Loại im lặng của những người đã quá quen với việc anh thất bại nên không buồn phản ứng nữa.
+Người dẫn chuyện: Raiko, tân binh vừa nhận kết quả Vanguard Hạng B, đứng gần cửa ra. Cậu ta liếc Ren đúng nửa giây, rồi quay đi.
+Raiko: Ba lần rồi đấy. Không hiểu sao vẫn quay lại.
+Người bên cạnh Raiko: Có khi nào cứ tin lần này khác thì sao.
+Người dẫn chuyện: Ren không trả lời. Anh cúi đầu, bước xuống bục, đi ngang qua Raiko. Đến sát cửa, anh dừng lại đúng một nhịp thở.
+Ren: Lần này là lần cuối tôi để họ đọc con số đó.
+Người dẫn chuyện: Máy quay lia sang bảng điện tử phía sau Ren — nơi hiển thị danh sách Warden mới. Góc màn hình, một dòng chữ nhỏ bị mờ: KIRIN DYNAMICS, đóng dấu trên logo Hội Trấn Thú.
+<<set_flag "Canh01_HoanThanh">>
+===

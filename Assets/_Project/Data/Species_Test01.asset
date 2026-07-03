@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948dd66b84a21a34894f51f8a96f585c, type: 3}
+  m_Name: Species_Test01
+  m_EditorClassIdentifier: Assembly-CSharp::TwilightRemnant.EchoSpeciesData
+  speciesId: test01
+  displayName: "V\u1ECDng th\xFA th\u1EED nghi\u1EC7m"
+  tier: F
+  maxHP: 50
+  armor: 2
+  sellPrice: 20
+  resGain: 5
+  conCostOnKeep: 5
+  carvingSequence: 610000007300000064000000
