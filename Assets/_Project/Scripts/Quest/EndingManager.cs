@@ -14,6 +14,7 @@ namespace TwilightRemnant
 
         private readonly List<float> conSnapshots = new();
         private bool pointOfNoReturnConfirmed;
+        public bool IsPointOfNoReturnConfirmed => pointOfNoReturnConfirmed;
 
         private void Awake()
         {
@@ -30,13 +31,25 @@ namespace TwilightRemnant
         /// <summary>Gọi ở các mốc cuối mỗi hồi để ghi nhận CON hiện tại.</summary>
         public void SnapshotCON(float currentCON) => conSnapshots.Add(currentCON);
 
+        /// <summary>Xuất toàn bộ mốc CON đã ghi nhận, để SaveSystem lưu — dùng List&lt;float&gt; nên
+        /// JsonUtility serialize được thẳng, không cần wrapper riêng như FlagEntry/InventoryEntry.</summary>
+        public List<float> GetConSnapshotsForSave() => new List<float>(conSnapshots);
+
+        /// <summary>Nạp lại mốc CON + trạng thái Điểm Không Quay Đầu từ file save.</summary>
+        public void LoadFromSave(List<float> savedSnapshots, bool savedPointOfNoReturnConfirmed)
+        {
+            conSnapshots.Clear();
+            if (savedSnapshots != null)
+                conSnapshots.AddRange(savedSnapshots);
+            pointOfNoReturnConfirmed = savedPointOfNoReturnConfirmed;
+        }
+
         private void HandleCONZero()
         {
             if (!pointOfNoReturnConfirmed)
             {
-                // TODO: gọi UI popup xác nhận thật, ví dụ UIPopup.ShowConfirm(...)
-                // Nếu người chơi từ chối -> gọi DeclineCorruption(); nếu xác nhận -> ConfirmCorruption().
-                Debug.Log("[EndingManager] TODO: hiển thị popup xác nhận Điểm Không Quay Đầu");
+                EventBus.Emit(GameEvents.OnPointOfNoReturnTriggered, null);
+                Debug.Log("[EndingManager] Đã Emit OnPointOfNoReturnTriggered — chờ popup UI xử lý");
             }
             else
             {
@@ -59,6 +72,7 @@ namespace TwilightRemnant
         private void LockCorruptionRoute()
         {
             StoryFlagManager.Instance?.SetFlag("CorruptionRouteLocked", true);
+            Debug.Log("[EndingManager] CorruptionRouteLocked = " + (StoryFlagManager.Instance?.HasFlag("CorruptionRouteLocked") ?? false));
         }
 
         public float GetWeightedCONAverage()
@@ -80,6 +94,13 @@ namespace TwilightRemnant
             return isLight ? "Kết Thúc Ánh Sáng" : "Kết Thúc Tha Hóa";
             // Quan hệ Yuki/Raiko là biến phụ: nếu Ánh Sáng nhưng quan hệ thấp nhất
             // -> vẫn Ánh Sáng, chỉ thiếu 2 NPC ở cảnh đoàn tụ (xử lý ở UI/scene ending).
+        }
+
+        /// <summary>Gọi ở cảnh kết thúc game (Arc 3) để tính và công bố ending.</summary>
+        public void TriggerEnding()
+        {
+            string result = ResolveEnding();
+            EventBus.Emit(GameEvents.OnEndingResolved, result);
         }
     }
 }

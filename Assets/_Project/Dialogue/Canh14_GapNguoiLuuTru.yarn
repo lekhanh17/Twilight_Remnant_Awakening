@@ -1,0 +1,22 @@
+﻿title: Canh14_GapNguoiLuuTru
+---
+Người dẫn chuyện: Địa điểm hẹn là một tầng hầm kho hàng cũ, gần rìa khu công nghiệp phía Nam — đúng khu vực "nhạy cảm" Ren từng thấy trong hồ sơ bị khoá. Không camera, không ánh sáng công ty.
+Người dẫn chuyện: Một người đứng sẵn trong bóng tối, mặc đồ bảo hộ cũ đã tháo hết logo Kirin Dynamics — dấu vết còn lại chỉ là vài vệt keo bạc chưa cạo hết.
+Người Lưu Trữ: Cậu đến đúng giờ. Tốt — nghĩa là cậu vẫn còn biết sợ đúng thứ cần sợ.
+Ren: Ông là ai? Sao biết về cha tôi?
+Người Lưu Trữ: Tôi từng là nghiên cứu viên của Kirin, thuộc Dự Án Khởi Nguyên — cùng dự án đã tạo ra cha cậu, theo một cách nói nào đó. Tôi biết đủ để tin cậu sẽ muốn nghe, nhưng không biết đủ để kể hết ngay bây giờ.
+Ren: Vậy ông muốn gì? Không ai giúp không công trong thành phố này.
+Người Lưu Trữ: Đúng. Tôi muốn Maki trả giá. Không nói lý do — cậu chưa cần biết, và tôi cũng chưa chắc cậu tin nổi nếu tôi nói bây giờ.
+-> Chấp nhận hợp tác, dù chưa biết hết ý đồ thật
+    <<set_flag "Canh14_HopTacNguoiLuuTru">>
+    Người Lưu Trữ: Khôn ngoan hơn tôi tưởng. Cậu không cần tin tôi — chỉ cần đi cùng hướng một đoạn.
+    Người dẫn chuyện: Ông ta đưa Ren một mẩu dữ liệu nén, không có tiêu đề, chỉ ghi vài ký tự mã hoá. Nói đây là "bước đầu" — nhiều hơn thì phải đổi bằng việc Ren tự chứng minh có thể tin được.
+-> Từ chối, giữ khoảng cách, chỉ lấy thông tin cần thiết
+    <<set_flag "Canh14_TuChoiNguoiLuuTru">>
+    Người Lưu Trữ: Cũng được. Tôi không cần cậu tin — chỉ cần cậu nhớ tôi đã đề nghị trước. Lần sau gặp lại, giá sẽ khác.
+    Người dẫn chuyện: Ông ta không ép thêm, chỉ lặng lẽ rút lui vào bóng tối sâu hơn trong kho hàng, để lại Ren một mình với câu hỏi còn nhiều hơn câu trả lời.
+Người dẫn chuyện: Trước khi rời đi, Người Lưu Trữ dừng lại một nhịp, như thể cân nhắc có nên nói thêm không.
+Người Lưu Trữ: Một điều tôi có thể nói chắc: Maki biết một phần sự thật về Dự Án Khởi Nguyên — không phải toàn bộ. Đừng để hắn khiến cậu tin hắn biết hết. Cả tôi cũng không biết hết.
+Người dẫn chuyện: Ren trở về Hub_TwilightCity khi trời gần sáng, mẩu dữ liệu (nếu có) nằm im trong túi — chưa mở, chưa chắc nên mở.
+<<set_flag "Canh14_HoanThanh">>
+===

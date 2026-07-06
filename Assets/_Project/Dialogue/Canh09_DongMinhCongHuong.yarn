@@ -1,0 +1,12 @@
+﻿title: Canh09_DongMinhCongHuong
+---
+Người dẫn chuyện: Một Vết Sẹo hạng D, ban đêm, vài tuần sau. Ren giờ đã quen hơn với việc dùng sức mạnh — nhưng vẫn phải giấu Yuki và công ty.
+Người dẫn chuyện: Anh chạm trán một Vọng Thú nhỏ, bị thương, cô lập khỏi bầy — không tấn công ngay mà lùi lại, phát ra âm thanh gần giống tiếng rên.
+Người dẫn chuyện: Đây là lần đầu Ren thử điều Yuki chưa từng dạy, điều không có trong sách hướng dẫn Cleaner: anh hạ vũ khí, tiến lại chậm, thử "cảm nhận" nó bằng chính giác quan Tàn Hưởng mới có.
+Ren: Tao không đến để giết mày. Chỉ là... tao cũng đang cố hiểu tao là cái gì, giống mày vậy.
+Người dẫn chuyện: Con Vọng Thú không tấn công. Nó cụp thấp, rồi chậm rãi đi theo sau Ren vài bước — không thuần phục hoàn toàn, chỉ là một sự đình chiến mong manh.
+Người dẫn chuyện: Ngay khoảnh khắc đó, chỉ số CON của Ren tụt nhẹ không rõ lý do — như thể việc "cộng hưởng" này có một cái giá anh chưa hiểu hết.
+<<modify_con -3>>
+Người dẫn chuyện: CON: -3 (Nguyên nhân: Cộng Hưởng Sâu — chưa xác định).
+<<set_flag "Canh09_HoanThanh">>
+===

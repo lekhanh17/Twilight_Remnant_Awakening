@@ -28,6 +28,12 @@ namespace TwilightRemnant
 
         public bool CanEnterEveningChoice() => !eveningSlotUsedToday;
 
+        /// <summary>
+        /// Gỡ khoá 19:00/21:00 thủ công — dùng khi test bằng cách nhảy ngày trực tiếp
+        /// (không qua Sleep), vì bình thường cờ này chỉ tự reset trong EndDay().
+        /// </summary>
+        public void ResetEveningSlot() => eveningSlotUsedToday = false;
+
         public void AdvancePhase(DayPhase next)
         {
             if (next == DayPhase.EveningChoice)

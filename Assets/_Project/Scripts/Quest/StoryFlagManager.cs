@@ -23,5 +23,24 @@ namespace TwilightRemnant
         }
 
         public bool HasFlag(string id) => flags.GetValueOrDefault(id, false);
+
+        /// <summary>Xuất toàn bộ flag hiện có để SaveSystem ghi vào file save.</summary>
+        public List<FlagEntry> GetAllFlags()
+        {
+            var list = new List<FlagEntry>();
+            foreach (var kv in flags)
+                list.Add(new FlagEntry { key = kv.Key, value = kv.Value });
+            return list;
+        }
+
+        /// <summary>Nạp lại toàn bộ flag từ file save — gọi từ GameBootstrapper lúc Load.
+        /// Xoá sạch flag cũ trước khi nạp để không lẫn dữ liệu của phiên chơi trước.</summary>
+        public void LoadFlags(List<FlagEntry> savedFlags)
+        {
+            flags.Clear();
+            if (savedFlags == null) return;
+            foreach (var entry in savedFlags)
+                flags[entry.key] = entry.value;
+        }
     }
 }

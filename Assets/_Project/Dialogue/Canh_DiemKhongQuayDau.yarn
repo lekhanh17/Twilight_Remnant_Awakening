@@ -1,0 +1,42 @@
+﻿title: DiemKhongQuayDau_Main
+---
+Yuki đứng ở khung cửa, không bước vào ngay. Một lúc lâu cô không nói gì.
+
+YUKI: Cậu đang run.
+
+YUKI: Tôi không hỏi cậu là cái gì nữa. Câu đó tôi đã hỏi rồi.
+
+Cô nhìn thẳng vào Ren, ánh mắt không phải sợ hãi — mà là thứ gì đó cũ hơn, đã từng thấy trước đây.
+
+YUKI: Có một người, trước cậu rất lâu. Tôi cũng đứng đúng chỗ này. Cũng im lặng như cậu bây giờ.
+
+YUKI: Tôi không hỏi liệu người đó có kiểm soát được không. Tôi đã tin là có.
+
+Cô dừng lại, như thể câu tiếp theo nặng hơn cô tưởng.
+
+YUKI: Tôi vẫn chưa biết câu đó có nên hỏi lần này không.
+
+<<snapshot_con>>
+===
+
+title: DiemKhongQuayDau_TuChoi
+---
+Yuki không thở phào. Cô chỉ đứng yên một nhịp, rồi quay đi trước khi Ren nhìn thấy mặt cô.
+
+YUKI: Tốt.
+
+YUKI: Nhưng tôi sẽ không hỏi cậu câu đó lần thứ ba đâu.
+
+<<set_flag "Canh_DiemKhongQuayDau_TuChoi_HoanThanh">>
+===
+
+title: DiemKhongQuayDau_XacNhan
+---
+Yuki không ngăn. Không nói gì cả một lúc lâu — chỉ nhìn, như đang xem lại đúng một cảnh cô đã xem một lần rồi.
+
+YUKI: ...Vậy đó.
+
+Cô quay đi trước, không phải vì giận — mà vì không muốn Ren thấy cô đang nghĩ tới ai.
+
+<<set_flag "Canh_DiemKhongQuayDau_XacNhan_HoanThanh">>
+===

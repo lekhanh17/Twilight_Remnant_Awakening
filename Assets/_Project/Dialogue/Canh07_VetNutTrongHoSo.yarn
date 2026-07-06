@@ -1,0 +1,14 @@
+﻿title: Canh07_VetNutTrongHoSo
+---
+Người dẫn chuyện: Tối, phòng lưu trữ nhỏ của Aftermath Corp — nơi Ren được giao nhiệm vụ nhập liệu các mẫu vật đã thu, công việc phụ nhàm chán nhưng cho anh quyền truy cập hồ sơ.
+Người dẫn chuyện: Ren lần giở qua các báo cáo Vết Sẹo cũ theo thói quen — tò mò về câu Yuki từng nói: "cổng này đóng nhanh bất thường đấy". Anh so sánh vài báo cáo, nhận ra một mẫu số chung kỳ lạ.
+Người dẫn chuyện: Các Vết Sẹo gần khu công nghiệp cũ phía Nam thành phố luôn được đóng dấu "ĐÃ XỬ LÝ NỘI BỘ — KHÔNG CẦN LƯU CHI TIẾT", trong khi mọi Vết Sẹo khác đều có hồ sơ đầy đủ.
+Ren: Tại sao khu đó luôn được... bỏ qua?
+Người dẫn chuyện: Anh thử tìm bản đồ khu công nghiệp phía Nam — bị khóa quyền truy cập. Một dòng chữ nhỏ hiện lên khi anh cố mở: "Tài liệu thuộc quyền quản lý KIRIN DYNAMICS — Cấp phép Warden hạng B trở lên."
+Người dẫn chuyện: Đây là lần đầu tiên cái tên đó xuất hiện rõ ràng, có ý nghĩa, trước mắt Ren.
+Người dẫn chuyện: Cửa phòng bật mở. Ren giật mình tắt màn hình. Là Yuki, mang đồ ăn tối cho anh — nhưng ánh mắt cô lướt qua màn hình vừa tắt đúng nửa giây, không nói gì, chỉ đặt hộp cơm xuống.
+Yuki: Làm việc trễ thế. Tò mò cái gì à?
+Ren: ...Không có gì.
+Yuki: Ừ. Không có gì thì tốt.
+<<set_flag "Canh07_HoanThanh">>
+===

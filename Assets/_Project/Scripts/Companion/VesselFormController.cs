@@ -12,6 +12,13 @@ namespace TwilightRemnant
         public float durationBase = 15f;
         public bool IsActive { get; private set; }
 
+        [Header("Hiệu ứng hình ảnh (không cần vẽ hình thú thể mới)")]
+        public GameObject auraObject;           // Effect_VesselForm_aura, đặt Sorting Order thấp hơn Ren
+        public SpriteRenderer playerSpriteRenderer;
+        public Color activeTint = new Color(0.85f, 0.7f, 1f); // tím nhẹ khi biến hình
+
+        private Color originalColor = Color.white;
+
         public void Activate(StatBlock stats)
         {
             if (IsActive) return;
@@ -23,10 +30,19 @@ namespace TwilightRemnant
         private IEnumerator RevertAfter(float t)
         {
             IsActive = true;
-            // TODO: đổi sprite/animator sang hình dạng Vọng Thú tại đây
+            if (auraObject != null) auraObject.SetActive(true);
+            if (playerSpriteRenderer != null)
+            {
+                originalColor = playerSpriteRenderer.color;
+                playerSpriteRenderer.color = activeTint;
+            }
+
             yield return new WaitForSeconds(t);
+
             IsActive = false;
-            // TODO: trở lại hình dạng gốc tại đây
+            if (auraObject != null) auraObject.SetActive(false);
+            if (playerSpriteRenderer != null)
+                playerSpriteRenderer.color = originalColor;
         }
     }
 }

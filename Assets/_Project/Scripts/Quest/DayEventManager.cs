@@ -32,6 +32,8 @@ namespace TwilightRemnant
 
             foreach (var ev in allEvents)
             {
+                if (ev == null) continue;
+
                 if (ev.dayIndex == currentDay && ev.phaseTrigger == phase && ev.CanTrigger())
                 {
                     Debug.Log($"[DayEventManager] Trigger event: Day={ev.dayIndex} Phase={ev.phaseTrigger} Node={ev.yarnNodeName}");

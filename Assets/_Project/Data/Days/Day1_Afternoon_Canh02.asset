@@ -16,5 +16,5 @@ MonoBehaviour:
   arcId: Arc1
   phaseTrigger: 3
   yarnNodeName: Canh02_NgaRe
-  requiredFlag: 'Canh01_HoanThanh '
+  requiredFlag: Canh01_HoanThanh
   blockedByFlag: 

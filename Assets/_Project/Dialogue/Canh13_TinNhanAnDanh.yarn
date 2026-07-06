@@ -1,0 +1,16 @@
+﻿title: Canh13_TinNhanAnDanh
+---
+Người dẫn chuyện: Ba ngày sau đêm Vết Sẹo hạng B, Ren vẫn chưa trả lời tin nhắn ẩn danh. Nó vẫn nằm im trong mục "Tin nhắn nội bộ" của thiết bị công ty — không ai khác thấy được, vì địa chỉ gửi đã bị xoá quyền truy xuất ngay sau khi gửi.
+Người dẫn chuyện: "Tôi biết cha cậu. Tôi biết cậu là ai. Gặp tôi trước khi Kirin tìm ra cậu trước."
+Người dẫn chuyện: Không có cách nào xác minh ai đứng sau dòng chữ đó. Có thể là bẫy của Kirin Dynamics để dò xem Ren biết được bao nhiêu. Có thể là thật.
+-> Trả lời tin nhắn, đồng ý gặp
+    <<set_flag "Canh13_DongYGap">>
+    Người dẫn chuyện: Ren gõ một dòng ngắn gọn, gửi đi trước khi kịp đổi ý. Vài giờ sau, một địa điểm và thời gian hiện lên màn hình, rồi tự xoá ngay sau khi Ren đọc xong — không lưu lại bất kỳ đâu.
+-> Không trả lời, tự điều tra trước xem ai đứng sau tin nhắn
+    <<set_flag "Canh13_TuDieuTra">>
+    Người dẫn chuyện: Ren không trả lời ngay. Anh dành vài buổi tối lục lại hồ sơ nội bộ mà Yuki từng nhắc tới, cố tìm dấu vết của địa chỉ đã gửi tin nhắn — nhưng nó đã bị xoá kỹ đến mức không còn gì để lục.
+    Người dẫn chuyện: Cuối cùng, không tìm ra gì thêm, chính bản thân sự im lặng kéo dài lại khiến Ren thấy bất an hơn là hành động. Anh quyết định vẫn sẽ đi gặp, chỉ là muộn hơn vài ngày.
+    <<set_flag "Canh13_DongYGap">>
+Người dẫn chuyện: Dù chọn cách nào, câu hỏi vẫn còn treo lơ lửng: ai đang theo dõi đủ sát để biết được chuyện của cha Ren — và tại sao lại chọn đúng lúc này để lộ diện?
+<<set_flag "Canh13_HoanThanh">>
+===

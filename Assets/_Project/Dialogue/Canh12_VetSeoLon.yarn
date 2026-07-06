@@ -1,0 +1,22 @@
+﻿title: Canh12_VetSeoLon
+---
+Người dẫn chuyện: Đêm, cảnh báo khẩn: một Vết Sẹo hạng B tại khu dân cư đông đúc phát nứt sớm — không đóng đúng chu kỳ 72 giờ như thường lệ.
+Người dẫn chuyện: Warden Conclave điều động lực lượng, nhưng chậm — khu này nằm ngoài tuyến ưu tiên vì gần khu công nghiệp phía Nam, khu vực "nhạy cảm" mà Ren đã thấy trong hồ sơ bị khóa.
+Người dẫn chuyện: Ren đang trên đường về sau ca làm, chứng kiến vết nứt đầu tiên xé toạc gần một khu chung cư. Dân thường hoảng loạn. Không có Warden nào tới kịp trong 10 phút tới — con số này công ty vô tình để lộ qua bộ đàm nội bộ.
+Người dẫn chuyện: Đây là khoảnh khắc chọn lựa thật sự đầu tiên của toàn bộ game — không phải lựa chọn hội thoại vô thưởng vô phạt, mà là quyết định hành động có hệ quả cơ chế thật.
+-> Lộ diện: dùng toàn lực Tàn Hưởng công khai để cầm chân Vọng Thú và sơ tán dân, chấp nhận bị Hội Trấn Thú/Kirin Dynamics chú ý
+    <<set_flag "Canh12_LoDien">>
+    <<modify_con -25>>
+    Người dẫn chuyện: Ren dùng toàn lực Tàn Hưởng công khai trước hàng chục nhân chứng để cầm chân Vọng Thú và sơ tán dân. CON giảm mạnh do phải dùng sức mạnh cực hạn — nhưng cứu được toàn bộ khu dân cư.
+-> Giấu mình: chỉ hỗ trợ sơ tán trong vai một Cleaner bình thường, giữ bí mật, chấp nhận thiệt hại nặng hơn
+    <<set_flag "Canh12_GiauMinh">>
+    Người dẫn chuyện: Ren chỉ hỗ trợ sơ tán trong vai một Cleaner bình thường, dùng kỹ năng và kinh nghiệm thay vì sức mạnh Tàn Hưởng. Một phần khu vực bị thiệt hại nặng hơn, nhưng bí mật của anh vẫn được giữ, CON ổn định.
+Người dẫn chuyện: Dù chọn nhánh nào, Ren đứng giữa đống đổ nát, thở dốc, và lần đầu tiên ký ức trong đầu anh không còn là mảnh vụn — nó kéo dài đủ lâu để anh thấy rõ một khuôn mặt đàn ông trẻ trong phòng thí nghiệm, tay đặt lên một cỗ máy, ngoảnh lại nhìn thẳng vào "ống kính" ký ức như đang nhìn chính Ren.
+Giọng người đàn ông (ký ức): Nếu con đang nghe được điều này... nghĩa là nó đã tìm thấy con. Đừng tin Kirin. Đừng tin cả Hội Trấn Thú. Chỉ tin—
+Người dẫn chuyện: Ký ức bị cắt đứt đột ngột — không phải vì kịch tính rẻ tiền, mà vì đây chính là giới hạn hiện tại của Tàn Hưởng: ký ức chỉ mở ra tương ứng với mức RES/CON người chơi đã đạt, cắt ngay tại từ cuối cùng.
+Người dẫn chuyện: Sáng hôm sau, dù Ren chọn nhánh nào, anh đều nhận được một tin nhắn ẩn danh trên thiết bị công ty, gửi từ một địa chỉ nội bộ đã bị xóa quyền truy xuất ngay sau đó.
+Tin nhắn ẩn danh: Tôi biết cha cậu. Tôi biết cậu là ai. Gặp tôi trước khi Kirin tìm ra cậu trước.
+Người dẫn chuyện: Không có chữ ký. Màn hình tối. KẾT ARC 1.
+<<snapshot_con>>
+<<set_flag "Canh12_HoanThanh">>
+===

@@ -1,0 +1,12 @@
+﻿title: Canh10_NguongMatKiemSoat
+---
+Người dẫn chuyện: Một nhiệm vụ Cleaner ban ngày đi sai — xác Vọng Thú tưởng đã "nguội" bất ngờ còn sót một ổ ký sinh lớn hơn dự kiến. Ren buộc phải dùng sức mạnh Tàn Hưởng công khai trước mặt hai đồng nghiệp Cleaner khác để cứu họ.
+Người dẫn chuyện: Anh thắng trận — nhưng CON tụt mạnh trong lúc chiến đấu. Lần đầu tiên Ren cảm nhận rõ "phần con" trong sức mạnh này: tầm nhìn ám tím ở rìa mắt, một giọng nói rất khẽ trong đầu thì thầm những từ không phải tiếng Việt.
+Người dẫn chuyện: Trong nửa giây, Ren muốn đánh tiếp dù kẻ địch đã gục — một xung động không phải của anh. Anh tự kìm lại được, nhưng phải dừng tay giữa chừng bằng ý chí, không phải vì hết mục tiêu.
+<<modify_con -15>>
+Đồng nghiệp Cleaner: ...Cái quái gì vừa xảy ra vậy?
+Người dẫn chuyện: Ren không có câu trả lời an toàn nào. Đây là khoảnh khắc bản chất "danh tính kép" lần đầu bị đe dọa lộ ra — không phải vì anh sơ hở, mà vì hoàn cảnh buộc anh phải chọn giữa giấu bí mật và cứu người.
+Người dẫn chuyện: Tối hôm đó, Yuki gọi riêng Ren vào văn phòng — không giận dữ, giọng cô nghiêm trọng khác thường.
+Yuki: Tôi sẽ không hỏi cậu là cái gì. Nhưng tôi cần biết một điều duy nhất: cậu tự kiểm soát được nó, hay nó đang mượn tạm cơ thể cậu?
+<<set_flag "Canh10_HoanThanh">>
+===

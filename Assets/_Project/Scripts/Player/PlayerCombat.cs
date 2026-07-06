@@ -10,6 +10,11 @@ namespace TwilightRemnant
         public float baseDamage = 10f;
         public LayerMask enemyLayer;
 
+        [Header("Hiệu ứng Tàn Hưởng (chỉ hiện sau khi thức tỉnh)")]
+        public GameObject tanHuongSlashPrefab;
+        public string awakeningFlag = "Canh04_HoanThanh";
+        public float slashEffectLifetime = 0.2f;
+
         private void Awake()
         {
             if (Instance != null && Instance != this) { Destroy(gameObject); return; }
@@ -28,6 +33,20 @@ namespace TwilightRemnant
             var stats = PlayerStats.Instance != null ? PlayerStats.Instance.stats : new StatBlock();
             float dmg = DamageCalculator.Calculate(stats, baseDamage, target.Armor);
             target.TakeDamage(dmg);
+
+            SpawnSlashEffectIfAwakened(hit.point, direction);
+        }
+
+        private void SpawnSlashEffectIfAwakened(Vector2 point, Vector2 direction)
+        {
+            if (tanHuongSlashPrefab == null) return;
+            bool awakened = StoryFlagManager.Instance != null && StoryFlagManager.Instance.HasFlag(awakeningFlag);
+            if (!awakened) return; // chưa thức tỉnh -> chưa có hiệu ứng Tàn Hưởng, đúng lore
+
+            var effect = Instantiate(tanHuongSlashPrefab, point, Quaternion.identity);
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            effect.transform.rotation = Quaternion.Euler(0, 0, angle);
+            Destroy(effect, slashEffectLifetime);
         }
     }
 
